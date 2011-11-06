@@ -50,10 +50,13 @@ GET CODE FROM REPO
 Scenario: You wrote some code and uploaded it to a GitHub repo and now you are at another computer and you want to continue coding where you left off
 What you need to do in order to get your code from the GitHub repo: clone the code from GitHub to your local machine
 How to do it:
+With no working directory
     1. open GIT bash
     2. navigate to a location where you want the code to go
     3. "git clone git@github.com:username/ProjectName.git"
-
+With a directory in which you worked with this project before
+	1. To be added
+	
 	
 	
 UPLOAD CODE TO REPO

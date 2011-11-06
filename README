@@ -1,0 +1,67 @@
+This is my private How To on GitHub.
+As I'm a newbie to GitHub, I will need this in order to get things done faster without having to look for tutorials every time I need to get something done in GitHub.
+These guides assumes that
+    a. you have a GitHub account
+    b. you are using MS Windows OS
+	c. you already have setup a API token
+
+SETUP GITHUB ON A NEW COMPUTER
+Sceniaro: You're on some computer without GitHub and the code you need
+What you need to do in order to get coding: Setup GitHub and download stuff from repo
+How to do it:
+Setup GitHub
+    1. download the latest version of GitHub at code.google.com/p/msysgit/downloads/list
+    2. install GitHub (just click next on everything and you'll be fine)
+    3. generate a new SSH-key
+        -ssh-keygen -t rsa -C "your_email@youremail.com"
+        -just press enter at the "Enter file in which to save the key"-question
+        -come up with, and enter a passphrase
+    4. Add the SSH-key to the GitHub account
+        -login to GitHub and click “Account Settings” > Click “SSH Public Keys” > Click “Add another public key”
+        -copy the ssh-key from id_rsa.pub, paste it into the text field and hit "Add"
+    5. Test the connection
+        -ssh -T git@github.com
+        -type "yes" and press enter
+    6.setup GitHub info
+		-git config --global user.name "FirstName LastName"
+        -git config --global user.email "your-email@youremail.com"
+		-git config --global github.user username
+		-git config --global github.token 0123456789yourf0123456789token (from “Account Settings” > “Account Admin.”)
+Download code from repo
+	Read separate instruction GET CODE FROM REPO in this document
+
+SETUP A NEW REPOSITORY
+Sceniaro: You want to start a new coding project and use GitHub as repository
+What you need to do in order to get a new coding project going in terms of repository: setup a repo in GitHub and setup a repo locally
+How to do it:
+	1. create a new repository in GitHub 
+		-click "Dashboard"
+		-click the "New Repository" button in the bottom right corner
+		-come up with a name for your project, add a description and click "Add Repository"
+	2. open Git Bash and type git init in your project folder
+
+GET CODE FROM REPO
+Sceniaro: You wrote some code and uploaded it to a GitHub repo and now you are at another computer and you want to continue coding where you left off
+What you need to do in order to get your code from the GitHub repo: clone the code from GitHub to your local machine
+How to do it:
+    1. open GIT bash
+    2. navigate to a location where you want the code to go
+    3. "git clone git@github.com:username/ProjectName.git"
+
+UPLOAD CODE TO REPO
+Sceniaro: You have written some code that you want to upload (commit -> push? (Not sure on the terminology here)) to the remote (GitHub) repository
+What u need to do in order to update the repository with your changes: commit your changes locally and then push your changes to GitHub.
+How to do it:
+Alternative 1: Commit particular files
+    1. open GIT bash
+    2. navigate to the folder where your code is
+    3. ADD your changes --> "git add fileName"
+    4. COMMIT your changes --> "git commit -m 'commit-message'" (-m=message-flag, if you want to add a message to your commit)
+    5. PUSH your changes --> "git push" or "git push origin master", where origin=REMOTENAME and master=BRANCHNAME
+
+Alternative 2: Commit everything (assuming that you added changes to your commit)
+    1. open GIT bash
+    2. navigate to the folder where your code is
+    3. COMMIT everything that has been changed --> "git commit -a -m 'commit-message'" (-a=commit everything that has been changed, -m=message-flag, if you want to add a message to your commit)
+    4. PUSH your changes --> "git push" or "git push origin master", where origin=REMOTENAME and master=BRANCHNAME
+	

@@ -3,7 +3,7 @@ As I'm a newbie to GitHub, I will need this in order to get things done faster w
 These guides assumes that
     a. you have a GitHub account
     b. you are using MS Windows OS
-		c. you already have setup a API token
+	c. you already have setup a API token
 
 	
 	
@@ -55,7 +55,7 @@ With no working directory
     2. "git clone git@github.com:username/ProjectName.git"
 With a directory in which you worked with this project before
 		1. navigate to the project directory
-		2. PULL the code from the repo --> git pull origin
+		2. PULL the code from the repo --> git pull origin master
 	
 	
 	

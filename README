@@ -57,7 +57,8 @@ Alternative 1: Commit particular files
     2. navigate to the folder where your code is
     3. ADD your changes --> "git add fileName"
     4. COMMIT your changes --> "git commit -m 'commit-message'" (-m=message-flag, if you want to add a message to your commit)
-    5. PUSH your changes --> "git push" or "git push origin master", where origin=REMOTENAME and master=BRANCHNAME
+	5. SET A REMOTE --> git remote add origin git@github.com:username/Hello-World.git
+    6. PUSH your changes --> "git push" or "git push -u origin master", where origin=REMOTENAME, master=BRANCHNAME and -u=set upstream
 
 Alternative 2: Commit everything (assuming that you added changes to your commit)
     1. open GIT bash

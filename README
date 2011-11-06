@@ -60,15 +60,15 @@ UPLOAD CODE TO REPO
 Scenario: You have written some code that you want to upload (commit -> push? (Not sure on the terminology here)) to the remote (GitHub) repository
 What u need to do in order to update the repository with your changes: commit your changes locally and then push your changes to GitHub.
 How to do it:
-Alternative 1: Commit particular files
+Commit particular files
     1. open GIT bash
     2. navigate to the folder where your code is
     3. ADD your changes --> "git add fileName" or "git add -A" if you want to add all the files in the directory
     4. COMMIT your changes --> "git commit -m 'commit-message'" (-m=message-flag, if you want to add a message to your commit)
-	5. SET A REMOTE --> git remote add origin git@github.com:username/Hello-World.git
-    6. PUSH your changes --> "git push" or "git push -u origin master", where origin=REMOTENAME, master=BRANCHNAME and -u=set upstream
+	5. SET A REMOTE (only needed at first commit) --> git remote add origin git@github.com:username/Hello-World.git
+    6. PUSH your changes --> "git push" (can be used after first push) or "git push -u origin master", where origin=REMOTENAME, master=BRANCHNAME and -u=set upstream
 
-Alternative 2: Commit everything (assuming that you added changes to your commit)
+Commit everything (assuming that you added changes to your commit)
     1. open GIT bash
     2. navigate to the folder where your code is
     3. COMMIT everything that has been changed --> "git commit -a -m 'commit-message'" (-a=commit everything that has been changed, -m=message-flag, if you want to add a message to your commit)

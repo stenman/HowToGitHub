@@ -5,8 +5,10 @@ These guides assumes that
     b. you are using MS Windows OS
 	c. you already have setup a API token
 
+	
+	
 SETUP GITHUB ON A NEW COMPUTER
-Sceniaro: You're on some computer without GitHub and the code you need
+Scenario: You're on some computer without GitHub and the code you need
 What you need to do in order to get coding: Setup GitHub and download stuff from repo
 How to do it:
 Setup GitHub
@@ -30,8 +32,10 @@ Setup GitHub
 Download code from repo
 	Read separate instruction GET CODE FROM REPO in this document
 
+	
+	
 SETUP A NEW REPOSITORY
-Sceniaro: You want to start a new coding project and use GitHub as repository
+Scenario: You want to start a new coding project and use GitHub as repository
 What you need to do in order to get a new coding project going in terms of repository: setup a repo in GitHub and setup a repo locally
 How to do it:
 	1. create a new repository in GitHub 
@@ -40,22 +44,26 @@ How to do it:
 		-come up with a name for your project, add a description and click "Add Repository"
 	2. open Git Bash and type git init in your project folder
 
+	
+	
 GET CODE FROM REPO
-Sceniaro: You wrote some code and uploaded it to a GitHub repo and now you are at another computer and you want to continue coding where you left off
+Scenario: You wrote some code and uploaded it to a GitHub repo and now you are at another computer and you want to continue coding where you left off
 What you need to do in order to get your code from the GitHub repo: clone the code from GitHub to your local machine
 How to do it:
     1. open GIT bash
     2. navigate to a location where you want the code to go
     3. "git clone git@github.com:username/ProjectName.git"
 
+	
+	
 UPLOAD CODE TO REPO
-Sceniaro: You have written some code that you want to upload (commit -> push? (Not sure on the terminology here)) to the remote (GitHub) repository
+Scenario: You have written some code that you want to upload (commit -> push? (Not sure on the terminology here)) to the remote (GitHub) repository
 What u need to do in order to update the repository with your changes: commit your changes locally and then push your changes to GitHub.
 How to do it:
 Alternative 1: Commit particular files
     1. open GIT bash
     2. navigate to the folder where your code is
-    3. ADD your changes --> "git add fileName"
+    3. ADD your changes --> "git add fileName" or "git add -A" if you want to add all the files in the directory
     4. COMMIT your changes --> "git commit -m 'commit-message'" (-m=message-flag, if you want to add a message to your commit)
 	5. SET A REMOTE --> git remote add origin git@github.com:username/Hello-World.git
     6. PUSH your changes --> "git push" or "git push -u origin master", where origin=REMOTENAME, master=BRANCHNAME and -u=set upstream
@@ -64,5 +72,5 @@ Alternative 2: Commit everything (assuming that you added changes to your commit
     1. open GIT bash
     2. navigate to the folder where your code is
     3. COMMIT everything that has been changed --> "git commit -a -m 'commit-message'" (-a=commit everything that has been changed, -m=message-flag, if you want to add a message to your commit)
-    4. PUSH your changes --> "git push" or "git push origin master", where origin=REMOTENAME and master=BRANCHNAME
+    4. PUSH your changes --> "git push" or "git push -u origin master", where origin=REMOTENAME, master=BRANCHNAME and -u=set upstream
 	

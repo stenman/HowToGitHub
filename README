@@ -51,7 +51,7 @@ Scenario: You wrote some code and uploaded it to a GitHub repo and now you are a
 What you need to do in order to get your code from the GitHub repo: clone the code from GitHub to your local machine
 How to do it:
 With no working directory
-    1. navigate to a location where you want the code to go
+    1. navigate to a location where you want the code to go (GitHub will create a folder with the project name automatically)
     2. "git clone git@github.com:username/ProjectName.git"
 With a directory in which you worked with this project before
 		1. navigate to the project directory
